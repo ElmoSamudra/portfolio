@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function FrontPage() {
+export default function Hobbies() {
   const classes = useStyles();
   return (
     <div className={classes.root}>

@@ -1,7 +1,6 @@
 import React from "react";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
-import Grid from "@material-ui/core/Grid";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -12,14 +11,11 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Projects() {
+export default function Contacts() {
   const classes = useStyles();
   return (
     <div className={classes.root}>
-      <Typography variant="h1">Projects</Typography>
-      <Typography variant="subtitle1">
-        Where I spend most of my time.
-      </Typography>
+      <Typography variant="h1">Contact Details</Typography>
     </div>
   );
 }
