@@ -72,8 +72,8 @@ export default function FrontPage() {
               am a 21-year-old from Indonesia. Overall, I am quite a
               well-rounded person with a lot of interests and this website is to
               show my works, activities and hobbies. Please feel free to contact
-              me if you share an interest, need any help or just wanna chat. You
-              can find my contacts on the contacts page or the footer below.
+              me if you share an interest, need any help or just want to chat.
+              You can find my contacts on the contacts page or the footer below.
               Enjoy!
             </Typography>
             <Button
