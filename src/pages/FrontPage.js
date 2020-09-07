@@ -25,19 +25,23 @@ const useStyles = makeStyles((theme) => ({
   },
   image: {
     width: "100%",
-    marginLeft: "5%",
-    marginRight: "5%",
     padding: "5%",
   },
   title: {
-    padding: "3% 5% 1%",
+    padding: "0% 3% 0%",
     textAlign: "left",
     backgroundColor: "white",
   },
   intro: {
     marginLeft: "auto",
     marginRight: "auto",
-    padding: "10%",
+    padding: "3%",
+    textAlign: "left",
+  },
+  introText: {
+    marginLeft: "auto",
+    marginRight: "auto",
+    padding: "10% 5% 0% 10%",
     textAlign: "left",
   },
   body: {
@@ -61,11 +65,11 @@ export default function FrontPage() {
         <Grid input xs={12} className={classes.title}>
           <Typography variant="h1">Welcome</Typography>
         </Grid>
-        <Grid container item xs={12}>
+        <Grid container item xs={12} className={classes.intro}>
           <Grid input xs={4}>
             <img src={mainImage} alt="main" className={classes.image} />
           </Grid>
-          <Grid input xs={8} className={classes.intro}>
+          <Grid input xs={8} className={classes.introText}>
             <Typography variant="h2">Introduction</Typography>
             <Typography variant="body1" className={classes.grey}>
               Hi! My name is Shawn E Samudra and welcome to my personal page. I
