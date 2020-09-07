@@ -7,34 +7,42 @@ import Projects from "./pages/Projects";
 import Hobbies from "./pages/Hobbies";
 import Photography from "./pages/Photography";
 import Sports from "./pages/Sports";
+import { CssBaseline } from "@material-ui/core";
 
 function App() {
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/">
-          <NavBar />
-          <FrontPage />
-          <Footer />
-        </Route>
-        <Route exact path="/projects">
-          <NavBar />
-          <Projects />
-        </Route>
-        <Route exact path="/hobbies">
-          <NavBar />
-          <Hobbies />
-        </Route>
-        <Route exact path="/hobbies/photography">
-          <NavBar />
-          <Photography />
-        </Route>
-        <Route exact path="/hobbies/sports">
-          <NavBar />
-          <Sports />
-        </Route>
-      </Switch>
-    </Router>
+    <>
+      <CssBaseline />
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <NavBar />
+            <FrontPage />
+            <Footer />
+          </Route>
+          <Route exact path="/projects">
+            <NavBar />
+            <Projects />
+            <Footer />
+          </Route>
+          <Route exact path="/hobbies">
+            <NavBar />
+            <Hobbies />
+            <Footer />
+          </Route>
+          <Route exact path="/hobbies/photography">
+            <NavBar />
+            <Photography />
+            <Footer />
+          </Route>
+          <Route exact path="/hobbies/sports">
+            <NavBar />
+            <Sports />
+            <Footer />
+          </Route>
+        </Switch>
+      </Router>
+    </>
   );
 }
 

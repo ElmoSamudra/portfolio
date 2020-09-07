@@ -3,36 +3,59 @@ import Typography from "@material-ui/core/Typography";
 import Link from "@material-ui/core/Link";
 import PhotoCameraIcon from "@material-ui/icons/PhotoCamera";
 import FitnessCenterIcon from "@material-ui/icons/FitnessCenter";
+import { makeStyles } from "@material-ui/core/styles";
+import Grid from "@material-ui/core/Grid";
+
+const useStyles = makeStyles((theme) => ({
+  root: {},
+  title: {
+    marginLeft: "auto",
+    marginRight: "auto",
+    padding: "5% 20% 5%",
+    textAlign: "center",
+  },
+  body: {
+    marginLeft: "auto",
+    marginRight: "auto",
+    marginBottom: "7%",
+    maxWidth: "50%",
+    textAlign: "left",
+    paddingTop: "5%",
+  },
+}));
 
 export default function FrontPage() {
+  const classes = useStyles();
   return (
-    <div>
-      <Typography variant="h1">Hobbies</Typography>
-      <Typography variant="subtitle1">
-        Know to know a little more about me.
-      </Typography>
+    <div className={classes.root}>
+      <Grid className={classes.title}>
+        <Typography variant="h1">Hobbies</Typography>
+        <Typography variant="subtitle1">
+          Know a little more about me.
+        </Typography>
+      </Grid>
 
-      {/* Photography */}
-      <Typography variant="h2">
+      <Grid className={classes.body}>
+        {/* Photography */}
         <PhotoCameraIcon fontSize="Large" />
-        Photography
-      </Typography>
-      <Typography variant="body1">Capturing everyday moments.</Typography>
-      <Typography variant="body1">
-        <Link href="/hobbies/photography">View</Link>
-      </Typography>
+        <Typography variant="h2">Photography</Typography>
+        <Typography variant="body1">Capturing everyday moments.</Typography>
+        <Typography variant="body1">
+          <Link href="/hobbies/photography">Photography Portfolio</Link>
+        </Typography>
+      </Grid>
 
-      {/* Sports */}
-      <Typography variant="h2">
+      <Grid className={classes.body}>
+        {/* Sports */}
         <FitnessCenterIcon fontSize="Large" />
-        Sports
-      </Typography>
-      <Typography variant="body1">
-        I like to do various different sports.
-      </Typography>
-      <Typography variant="body1">
-        <Link href="/hobbies/sports">View</Link>
-      </Typography>
+        <Typography variant="h2">Sports</Typography>
+        <Typography variant="body1">
+          I like to do various different sports.
+        </Typography>
+        <Typography variant="body1">
+          <Link href="/hobbies/sports">Sport Activities</Link>
+        </Typography>
+      </Grid>
     </div>
   );
 }
