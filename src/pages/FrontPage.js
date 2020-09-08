@@ -4,6 +4,11 @@ import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 import Hidden from "@material-ui/core/Hidden";
+
+// components
+import MidBreadcrumb from "../components/MidBreadcrumb";
+
+//images
 import mainImage from "../images/workDesk.png";
 import latestWork from "../images/latestWork.png";
 import miscellaneous from "../images/miscellaneous.png";
@@ -12,7 +17,7 @@ const listItems = [
   {
     title: "Latest Work",
     photo: latestWork,
-    description: "Display of latest endeavours.",
+    description: "Display of my latest endeavours.",
     link: "/projects",
   },
   {
@@ -155,6 +160,7 @@ export default function FrontPage() {
                 </Button>
               </Grid>
             ))}
+            <MidBreadcrumb />
           </Grid>
         </Hidden>
       </Grid>
