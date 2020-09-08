@@ -94,9 +94,9 @@ export default function FrontPage() {
               <img src={mainImage} alt="main" className={classes.image} />
             </Grid>
           </Hidden>
-          <Hidden mdUp>
+          <Hidden smDown>
             <Grid input xs={8} className={classes.introText}>
-              <Typography variant="h4">Introduction</Typography>
+              <Typography variant="h2">Introduction</Typography>
               <Typography variant="body1" className={classes.grey}>
                 Hi! My name is Shawn E Samudra and welcome to my personal page.
                 I am a 21-year-old from Indonesia. Overall, I am quite a
@@ -115,9 +115,9 @@ export default function FrontPage() {
               </Button>
             </Grid>
           </Hidden>
-          <Hidden smDown>
+          <Hidden mdUp>
             <Grid input xs={8} className={classes.introTextSmall}>
-              <Typography variant="h2">Introduction</Typography>
+              <Typography variant="h4">Introduction</Typography>
               <Typography variant="body1" className={classes.grey}>
                 Hi! My name is Shawn E Samudra and welcome to my personal page.
                 I am a 21-year-old from Indonesia. Overall, I am quite a
