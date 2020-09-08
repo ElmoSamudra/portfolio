@@ -5,7 +5,7 @@ import Grid from "@material-ui/core/Grid";
 export default function Sports() {
   return (
     <div>
-      <Typography variant="h1">Sports</Typography>
+      <Typography variant="h2">Sports</Typography>
       <Typography variant="subtitle1">Doing something fun.</Typography>
     </div>
   );

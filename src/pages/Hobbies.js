@@ -29,7 +29,7 @@ export default function Hobbies() {
   return (
     <div className={classes.root}>
       <Grid className={classes.title}>
-        <Typography variant="h1">Hobbies</Typography>
+        <Typography variant="h2">Hobbies</Typography>
         <Typography variant="subtitle1">
           Know a little more about me.
         </Typography>
@@ -38,22 +38,26 @@ export default function Hobbies() {
       <Grid className={classes.body}>
         {/* Photography */}
         <PhotoCameraIcon fontSize="Large" />
-        <Typography variant="h2">Photography</Typography>
+        <Typography variant="h3">Photography</Typography>
         <Typography variant="body1">Capturing everyday moments.</Typography>
         <Typography variant="body1">
-          <Link href="/hobbies/photography">Photography Portfolio</Link>
+          <Link color="info" href="/hobbies/photography">
+            Photography Portfolio
+          </Link>
         </Typography>
       </Grid>
 
       <Grid className={classes.body}>
         {/* Sports */}
         <FitnessCenterIcon fontSize="Large" />
-        <Typography variant="h2">Sports</Typography>
+        <Typography variant="h3">Sports</Typography>
         <Typography variant="body1">
           I like to do various different sports.
         </Typography>
         <Typography variant="body1">
-          <Link href="/hobbies/sports">Sport Activities</Link>
+          <Link color="info" href="/hobbies/sports">
+            Sport Activities
+          </Link>
         </Typography>
       </Grid>
     </div>

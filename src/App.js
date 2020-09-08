@@ -23,6 +23,9 @@ const theme = createMuiTheme({
       // This is green.A700 as hex.
       main: "#ffffff",
     },
+    info: {
+      main: "#1e90ff",
+    },
   },
   overrides: {
     MuiCssBaseline: {

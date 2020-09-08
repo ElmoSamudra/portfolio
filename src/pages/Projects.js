@@ -16,7 +16,7 @@ export default function Projects() {
   const classes = useStyles();
   return (
     <div className={classes.root}>
-      <Typography variant="h1">Projects</Typography>
+      <Typography variant="h2">Projects</Typography>
       <Typography variant="subtitle1">
         Where I spend most of my time.
       </Typography>

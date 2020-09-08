@@ -5,7 +5,7 @@ import Grid from "@material-ui/core/Grid";
 export default function Photography() {
   return (
     <div>
-      <Typography variant="h1">Photography</Typography>
+      <Typography variant="h2">Photography</Typography>
       <Typography variant="subtitle1">Moments that I have captured.</Typography>
       <Grid>
         <Grid input xs={4}></Grid>
