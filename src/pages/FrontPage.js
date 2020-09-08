@@ -75,6 +75,11 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+function Age() {
+  var dt = new Date();
+  return dt.getYear() - 99; //99 was the year I was born
+}
+
 export default function FrontPage() {
   const classes = useStyles();
   return (
@@ -106,7 +111,7 @@ export default function FrontPage() {
               <Typography variant="h2">Introduction</Typography>
               <Typography variant="body1" className={classes.grey}>
                 Hi! My name is Shawn E Samudra and welcome to my personal page.
-                I am a 21-year-old from Indonesia. Overall, I am quite a
+                I am a {Age()}-year-old from Indonesia. Overall, I am quite a
                 well-rounded person with a lot of interests and this website is
                 to show my works, activities and hobbies. Please feel free to
                 contact me if you share an interest, need any help or just want
@@ -127,7 +132,7 @@ export default function FrontPage() {
               <Typography variant="h4">Introduction</Typography>
               <Typography variant="body1" className={classes.grey}>
                 Hi! My name is Shawn E Samudra and welcome to my personal page.
-                I am a 21-year-old from Indonesia. Overall, I am quite a
+                I am a {Age()}-year-old from Indonesia. Overall, I am quite a
                 well-rounded person with a lot of interests and this website is
                 to show my works, activities and hobbies. Please feel free to
                 contact me if you share an interest, need any help or just want
