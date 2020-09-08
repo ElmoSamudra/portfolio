@@ -94,7 +94,7 @@ export default function FrontPage() {
             <Typography variant="h2">Welcome</Typography>
           </Hidden>
           <Typography variant="h5">
-            Please not that this web is still under construction. Some features
+            Please note that this web is still under construction. Some features
             may not be working.
           </Typography>
         </Grid>
