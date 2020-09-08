@@ -81,16 +81,18 @@ export default function FrontPage() {
     <div className={classes.root}>
       <Grid container>
         {/* Welcome */}
-        <Hidden smDown>
-          <Grid input xs={12} className={classes.title}>
+        <Grid input xs={12} className={classes.title}>
+          <Hidden smDown>
             <Typography variant="h1">Welcome</Typography>
-          </Grid>
-        </Hidden>
-        <Hidden mdUp>
-          <Grid input xs={12} className={classes.title}>
+          </Hidden>
+          <Hidden mdUp>
             <Typography variant="h2">Welcome</Typography>
-          </Grid>
-        </Hidden>
+          </Hidden>
+          <Typography variant="h5">
+            Please not that this web is still under construction. Some features
+            may not be working.
+          </Typography>
+        </Grid>
 
         {/* Intro */}
         <Grid container item xs={12} className={classes.intro}>
