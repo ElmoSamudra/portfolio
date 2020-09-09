@@ -50,7 +50,7 @@ export default function Projects() {
       {projects.map((item, key) => (
         <Grid xs={12} className={classes.body}>
           <Typography variant="h3">• {item.label}</Typography>
-          <Link color="info" href={item.link}>
+          <Link color="info" href={item.github}>
             <GitHubIcon color="primary" fontSize="Large" />
             <Typography variant="h5">GitHub</Typography>
           </Link>
