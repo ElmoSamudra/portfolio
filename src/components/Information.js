@@ -16,6 +16,7 @@ import Hidden from "@material-ui/core/Hidden";
 import MidBreadcrumb from "../components/MidBreadcrumb";
 import Explore from "../components/Explore";
 import Background from "../components/Background";
+import WorkHistory from "../components/WorkHistory";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -92,6 +93,11 @@ export default function Information() {
             centered
           >
             <Tab label="Background" icon={<SchoolIcon />} {...a11yProps(0)} />
+            <Tab
+              label="Work History"
+              icon={<ExploreIcon />}
+              {...a11yProps(1)}
+            />
             <Tab label="Explore" icon={<ExploreIcon />} {...a11yProps(1)} />
           </Tabs>
         </AppBar>
@@ -111,6 +117,14 @@ export default function Information() {
           <TabPanel
             value={value}
             index={1}
+            dir={theme.direction}
+            className={classes.tab}
+          >
+            <WorkHistory />
+          </TabPanel>
+          <TabPanel
+            value={value}
+            index={2}
             dir={theme.direction}
             className={classes.tab}
           >

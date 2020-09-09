@@ -7,10 +7,16 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 
 const projects = [
   {
-    label: "Chatbot",
+    label: "Personal Chatbot",
     image: "",
     github: "https://github.com/ElmoSamudra/personalChatBot",
     details: "Microsoft Bot Framework",
+  },
+  {
+    label: "Roommate Matchmaker",
+    image: "",
+    github: "https://github.com/ElmoSamudra/Roommee-Front-End",
+    details: "MERN stack",
   },
   {
     label: "Personal Site",
