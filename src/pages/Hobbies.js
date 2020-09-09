@@ -1,10 +1,13 @@
 import React from "react";
 import Typography from "@material-ui/core/Typography";
 import Link from "@material-ui/core/Link";
-import PhotoCameraIcon from "@material-ui/icons/PhotoCamera";
-import FitnessCenterIcon from "@material-ui/icons/FitnessCenter";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
+
+//icons
+import PhotoCameraIcon from "@material-ui/icons/PhotoCamera";
+import FitnessCenterIcon from "@material-ui/icons/FitnessCenter";
+import ComputerIcon from "@material-ui/icons/Computer";
 
 const useStyles = makeStyles((theme) => ({
   root: {},
@@ -45,6 +48,13 @@ export default function Hobbies() {
             Photography Portfolio
           </Link>
         </Typography>
+      </Grid>
+
+      <Grid className={classes.body}>
+        {/* Web Dev */}
+        <ComputerIcon fontSize="Large" />
+        <Typography variant="h3">Web Design</Typography>
+        <Typography variant="body1">I enjoy aesthetics.</Typography>
       </Grid>
 
       <Grid className={classes.body}>

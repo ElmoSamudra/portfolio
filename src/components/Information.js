@@ -8,11 +8,15 @@ import AppBar from "@material-ui/core/AppBar";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Box from "@material-ui/core/Box";
-import SchoolIcon from "@material-ui/icons/School";
-import ExploreIcon from "@material-ui/icons/Explore";
 import Button from "@material-ui/core/Button";
 import Hidden from "@material-ui/core/Hidden";
 
+//icons
+import SchoolIcon from "@material-ui/icons/School";
+import ExploreIcon from "@material-ui/icons/Explore";
+import WorkIcon from "@material-ui/icons/Work";
+
+//components
 import MidBreadcrumb from "../components/MidBreadcrumb";
 import Explore from "../components/Explore";
 import Background from "../components/Background";
@@ -93,11 +97,7 @@ export default function Information() {
             centered
           >
             <Tab label="Background" icon={<SchoolIcon />} {...a11yProps(0)} />
-            <Tab
-              label="Work History"
-              icon={<ExploreIcon />}
-              {...a11yProps(1)}
-            />
+            <Tab label="Work History" icon={<WorkIcon />} {...a11yProps(1)} />
             <Tab label="Explore" icon={<ExploreIcon />} {...a11yProps(1)} />
           </Tabs>
         </AppBar>
