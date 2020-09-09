@@ -41,7 +41,7 @@ export default function Hobbies() {
       <Grid className={classes.body}>
         {/* Photography */}
         <PhotoCameraIcon fontSize="Large" />
-        <Typography variant="h3">Photography</Typography>
+        <Typography variant="h4">Photography</Typography>
         <Typography variant="body1">Capturing everyday moments.</Typography>
         <Typography variant="body1">
           <Link color="info" href="/hobbies/photography">
@@ -53,14 +53,14 @@ export default function Hobbies() {
       <Grid className={classes.body}>
         {/* Web Dev */}
         <ComputerIcon fontSize="Large" />
-        <Typography variant="h3">Web Design</Typography>
+        <Typography variant="h4">Web Design</Typography>
         <Typography variant="body1">I enjoy aesthetics.</Typography>
       </Grid>
 
       <Grid className={classes.body}>
         {/* Sports */}
         <FitnessCenterIcon fontSize="Large" />
-        <Typography variant="h3">Sports</Typography>
+        <Typography variant="h4">Sports</Typography>
         <Typography variant="body1">
           I like to do various different sports.
         </Typography>
