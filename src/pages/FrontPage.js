@@ -37,10 +37,6 @@ export default function FrontPage() {
           <Hidden mdUp>
             <Typography variant="h2">Welcome</Typography>
           </Hidden>
-          <Typography variant="h5">
-            Please note that this website is still under construction. Some
-            features may not be working.
-          </Typography>
         </Grid>
 
         {/* Intro */}
