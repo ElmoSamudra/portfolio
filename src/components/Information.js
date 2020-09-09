@@ -22,8 +22,7 @@ export default function Information() {
   return (
     <Hidden smDown>
       <Grid container item xs={12} className={classes.body}>
-        <MidBreadcrumb />
-        <Explor />
+        <Explore />
       </Grid>
     </Hidden>
   );
