@@ -50,7 +50,7 @@ export default function Explore() {
         <Box>
           <img src={item.photo} alt={item.title} className={classes.photo} />
           <div className={classes.cardText}>
-            <Typography variant="h4">{item.title}</Typography>
+            <Typography variant="h6">{item.title}</Typography>
             <Typography variant="subtitle1">{item.description}</Typography>
             <Button variant="outlined" href={item.link}>
               Explore

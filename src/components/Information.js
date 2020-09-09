@@ -79,59 +79,57 @@ export default function Information() {
     setValue(index);
   };
   return (
-    <Hidden smDown>
-      <Grid item xs={12} className={classes.body}>
-        <AppBar
-          position="static"
-          color="default"
-          elevation="false"
-          style={{ background: "white" }}
+    <Grid item xs={12} className={classes.body}>
+      <AppBar
+        position="static"
+        color="default"
+        elevation="false"
+        style={{ background: "white" }}
+      >
+        <Tabs
+          value={value}
+          onChange={handleChange}
+          scrollButtons="on"
+          indicatorColor="primary"
+          textColor="primary"
+          aria-label="scrollable force tabs example"
+          centered
         >
-          <Tabs
-            value={value}
-            onChange={handleChange}
-            scrollButtons="on"
-            indicatorColor="primary"
-            textColor="primary"
-            aria-label="scrollable force tabs example"
-            centered
-          >
-            <Tab label="Background" icon={<SchoolIcon />} {...a11yProps(0)} />
-            <Tab label="Work History" icon={<WorkIcon />} {...a11yProps(1)} />
-            <Tab label="Explore" icon={<ExploreIcon />} {...a11yProps(1)} />
-          </Tabs>
-        </AppBar>
-        <SwipeableViews
-          axis={theme.direction === "rtl" ? "x-reverse" : "x"}
-          index={value}
-          onChangeIndex={handleChangeIndex}
+          <Tab label="Background" icon={<SchoolIcon />} {...a11yProps(0)} />
+          <Tab label="Work History" icon={<WorkIcon />} {...a11yProps(1)} />
+          <Tab label="Explore" icon={<ExploreIcon />} {...a11yProps(1)} />
+        </Tabs>
+      </AppBar>
+      <SwipeableViews
+        axis={theme.direction === "rtl" ? "x-reverse" : "x"}
+        index={value}
+        onChangeIndex={handleChangeIndex}
+      >
+        <TabPanel
+          value={value}
+          index={0}
+          dir={theme.direction}
+          className={classes.tab}
         >
-          <TabPanel
-            value={value}
-            index={0}
-            dir={theme.direction}
-            className={classes.tab}
-          >
-            <Background />
-          </TabPanel>
-          <TabPanel
-            value={value}
-            index={1}
-            dir={theme.direction}
-            className={classes.tab}
-          >
-            <WorkHistory />
-          </TabPanel>
-          <TabPanel
-            value={value}
-            index={2}
-            dir={theme.direction}
-            className={classes.tab}
-          >
-            <Explore />
-          </TabPanel>
-        </SwipeableViews>
-      </Grid>
-    </Hidden>
+          <Background />
+        </TabPanel>
+        <TabPanel
+          value={value}
+          index={1}
+          dir={theme.direction}
+          className={classes.tab}
+        >
+          <WorkHistory />
+        </TabPanel>
+        <TabPanel
+          value={value}
+          index={2}
+          dir={theme.direction}
+          className={classes.tab}
+        >
+          <Explore />
+        </TabPanel>
+      </SwipeableViews>
+    </Grid>
   );
 }
