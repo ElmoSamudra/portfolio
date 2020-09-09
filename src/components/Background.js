@@ -18,7 +18,7 @@ const education = {
 
 const useStyles = makeStyles((theme) => ({
   box: {
-    marginBottom: "50%",
+    marginBottom: "35%",
     textAlign: "left",
   },
   title: {
@@ -29,20 +29,18 @@ const useStyles = makeStyles((theme) => ({
 export default function Background() {
   const classes = useStyles();
   return (
-    <Hidden smDown>
-      <Box display="flex" flexDirection="row" className={classes.box}>
-        <Box>
-          <Typography
-            color="textSecondary"
-            className={classes.title}
-            gutterBottom
-          >
-            Education
-          </Typography>
-          <Typography variant="h4">{education.undergrad}</Typography>
-          <Typography variant="h6">{education.major}</Typography>
-        </Box>
+    <Box display="flex" flexDirection="row" className={classes.box}>
+      <Box>
+        <Typography
+          color="textSecondary"
+          className={classes.title}
+          gutterBottom
+        >
+          Education
+        </Typography>
+        <Typography variant="h4">{education.undergrad}</Typography>
+        <Typography variant="h6">{education.major}</Typography>
       </Box>
-    </Hidden>
+    </Box>
   );
 }

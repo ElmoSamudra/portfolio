@@ -74,48 +74,50 @@ export default function Information() {
     setValue(index);
   };
   return (
-    <Grid item xs={12} className={classes.body}>
-      <AppBar
-        position="static"
-        color="default"
-        elevation="false"
-        style={{ background: "white" }}
-      >
-        <Tabs
-          value={value}
-          onChange={handleChange}
-          scrollButtons="on"
-          indicatorColor="primary"
-          textColor="primary"
-          aria-label="scrollable force tabs example"
-          centered
+    <Hidden smDown>
+      <Grid item xs={12} className={classes.body}>
+        <AppBar
+          position="static"
+          color="default"
+          elevation="false"
+          style={{ background: "white" }}
         >
-          <Tab label="Background" icon={<SchoolIcon />} {...a11yProps(0)} />
-          <Tab label="Explore" icon={<ExploreIcon />} {...a11yProps(1)} />
-        </Tabs>
-      </AppBar>
-      <SwipeableViews
-        axis={theme.direction === "rtl" ? "x-reverse" : "x"}
-        index={value}
-        onChangeIndex={handleChangeIndex}
-      >
-        <TabPanel
-          value={value}
-          index={0}
-          dir={theme.direction}
-          className={classes.tab}
+          <Tabs
+            value={value}
+            onChange={handleChange}
+            scrollButtons="on"
+            indicatorColor="primary"
+            textColor="primary"
+            aria-label="scrollable force tabs example"
+            centered
+          >
+            <Tab label="Background" icon={<SchoolIcon />} {...a11yProps(0)} />
+            <Tab label="Explore" icon={<ExploreIcon />} {...a11yProps(1)} />
+          </Tabs>
+        </AppBar>
+        <SwipeableViews
+          axis={theme.direction === "rtl" ? "x-reverse" : "x"}
+          index={value}
+          onChangeIndex={handleChangeIndex}
         >
-          <Background />
-        </TabPanel>
-        <TabPanel
-          value={value}
-          index={1}
-          dir={theme.direction}
-          className={classes.tab}
-        >
-          <Explore />
-        </TabPanel>
-      </SwipeableViews>
-    </Grid>
+          <TabPanel
+            value={value}
+            index={0}
+            dir={theme.direction}
+            className={classes.tab}
+          >
+            <Background />
+          </TabPanel>
+          <TabPanel
+            value={value}
+            index={1}
+            dir={theme.direction}
+            className={classes.tab}
+          >
+            <Explore />
+          </TabPanel>
+        </SwipeableViews>
+      </Grid>
+    </Hidden>
   );
 }

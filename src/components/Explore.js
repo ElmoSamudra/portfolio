@@ -30,7 +30,7 @@ const listItems = [
 
 const useStyles = makeStyles((theme) => ({
   box: {
-    marginBottom: "50%",
+    marginBottom: "35%",
   },
   photo: {
     width: "50%",
@@ -45,21 +45,19 @@ const useStyles = makeStyles((theme) => ({
 export default function Explore() {
   const classes = useStyles();
   return (
-    <Hidden smDown>
-      <Box display="flex" flexDirection="row" className={classes.box}>
-        {listItems.map((item, key) => (
-          <Box>
-            <img src={item.photo} alt={item.title} className={classes.photo} />
-            <div className={classes.cardText}>
-              <Typography variant="h4">{item.title}</Typography>
-              <Typography variant="subtitle1">{item.description}</Typography>
-              <Button variant="outlined" href={item.link}>
-                Explore
-              </Button>
-            </div>
-          </Box>
-        ))}
-      </Box>
-    </Hidden>
+    <Box display="flex" flexDirection="row" className={classes.box}>
+      {listItems.map((item, key) => (
+        <Box>
+          <img src={item.photo} alt={item.title} className={classes.photo} />
+          <div className={classes.cardText}>
+            <Typography variant="h4">{item.title}</Typography>
+            <Typography variant="subtitle1">{item.description}</Typography>
+            <Button variant="outlined" href={item.link}>
+              Explore
+            </Button>
+          </div>
+        </Box>
+      ))}
+    </Box>
   );
 }
