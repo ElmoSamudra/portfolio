@@ -21,7 +21,7 @@ const background = [
     where: "Gloria Christian Highschool",
     subWhere: "Science",
     details:
-      "Gloria was a place where I started to learn how vast the world is. I was dedicated to sports in my first year and spend the rest of my high school years participating in math and physics competitions. During my three year time in high school, I managed to earn various different awards and won many competitions in different fields including futsal and astronomy. Competitions that were challenging was realy fun. The best moments of my high school competition career was not during competitions on which I won, but rather the closest losses in large national competitions. It really motivated me to push myself to try and win the next year.",
+      "Gloria was a place where I started to learn how vast the world is. I was dedicated to sports in my first year and spend the rest of my high school years participating in math and physics competitions. During my three year time in high school, I managed to earn various different awards and won many competitions in different fields including futsal and astronomy. Competitions that were challenging was realy fun. The best moments of my high school competition career was not during competitions that I won, but rather the closest losses in large national competitions. It really motivated me to push myself to try and win the next year.",
   },
 ];
 
