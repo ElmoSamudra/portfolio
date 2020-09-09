@@ -32,10 +32,10 @@ export default function FrontPage() {
         {/* Welcome */}
         <Grid input xs={12} className={classes.title}>
           <Hidden smDown>
-            <Typography variant="h1">Welcome</Typography>
+            <Typography variant="h1">Welcome.</Typography>
           </Hidden>
           <Hidden mdUp>
-            <Typography variant="h2">Welcome</Typography>
+            <Typography variant="h2">Welcome.</Typography>
           </Hidden>
         </Grid>
 
