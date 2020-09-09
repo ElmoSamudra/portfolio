@@ -14,8 +14,7 @@ const history = [
   {
     where: "Deloitte",
     subWhere: "Risk Analyst - Intern",
-    details:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec dignissim ex, eu volutpat tellus. Pellentesque convallis, massa sit amet varius egestas, arcu metus rutrum ipsum, quis finibus mauris odio vel urna. Suspendisse nec tempor ipsum, ac consequat lorem. Praesent egestas vehicula leo. Suspendisse enim nibh, feugiat vel maximus vel, imperdiet nec ipsum. Nam imperdiet, eros quis lacinia maximus, enim massa finibus nunc, at pretium nisl massa quis arcu. Quisque sit amet ullamcorper neque, quis interdum erat. Pellentesque in tempor enim. Vestibulum eget massa lacus.",
+    details: "",
   },
 ];
 
