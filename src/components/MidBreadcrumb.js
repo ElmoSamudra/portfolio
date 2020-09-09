@@ -7,7 +7,7 @@ import Grid from "@material-ui/core/Grid";
 
 const useStyles = makeStyles((theme) => ({
   bread: {
-    padding: "3% 3% 5%",
+    padding: "3% 3% 3%",
     backgroundColor: "white",
     display: "flex",
     alignItems: "center",
@@ -50,7 +50,7 @@ export default function MidBreadcrumb() {
         <StyledBreadcrumb
           component="a"
           href="#"
-          label="Work"
+          label="Explore"
           onClick={breadcrumbClick}
         />
       </Breadcrumbs>

@@ -9,6 +9,9 @@ const useStyles = makeStyles((theme) => ({
     marginRight: "auto",
     padding: "5% 20% 5%",
     textAlign: "center",
+    display: "flex",
+    flexDirection: "column",
+    minHeight: "100vh",
   },
 }));
 
