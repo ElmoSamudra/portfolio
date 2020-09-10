@@ -8,6 +8,7 @@ import Grid from "@material-ui/core/Grid";
 import PhotoCameraIcon from "@material-ui/icons/PhotoCamera";
 import FitnessCenterIcon from "@material-ui/icons/FitnessCenter";
 import ComputerIcon from "@material-ui/icons/Computer";
+import SentimentSatisfiedAltIcon from "@material-ui/icons/SentimentSatisfiedAlt";
 
 const useStyles = makeStyles((theme) => ({
   root: {},
@@ -51,10 +52,21 @@ export default function Hobbies() {
       </Grid>
 
       <Grid className={classes.body}>
-        {/* Web Dev */}
+        {/* Web Design */}
         <ComputerIcon fontSize="Large" />
         <Typography variant="h4">Web Design</Typography>
         <Typography variant="body1">I enjoy aesthetics.</Typography>
+      </Grid>
+
+      <Grid className={classes.body}>
+        {/* Meditation */}
+        <SentimentSatisfiedAltIcon fontSize="Large" />
+        <Typography variant="h4">Meditation</Typography>
+        <Typography variant="body1">
+          <Link color="info" href="https://naturalwayofliving.com/">
+            Where I find myself in peace.
+          </Link>
+        </Typography>
       </Grid>
 
       <Grid className={classes.body}>
