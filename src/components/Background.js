@@ -13,7 +13,7 @@ import miscellaneous from "../images/miscellaneous.png";
 const background = [
   {
     where: "University of Melbourne",
-    subWhere: "Bachelor of Science in Data Science",
+    subWhere: "Bachelor of Science - Data Science",
     details:
       'Unimelb presented many diverse opportunities. It allowed me to connect with great professors, caring tutors and wonderful peers. The three years I spent in Unimelb pushed me to open my knowledge and challenge my worldview.\n Every day was different in Unimelb. The university’s "Melbourne Model" enabled me to learn complex statistics, machine learning and Information Technologies in-depth while also discovering the world of psychology, finance and arts. Amazingly brilliant minds motivated me to continue improving and thaught me humility. The expression of "awed" gets thrown at me on a daily basis and I love it. It just shows how amazing the world can be.\nUnimelb gave me the joy of learning and endless inspirations.',
   },
