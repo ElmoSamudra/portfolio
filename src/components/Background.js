@@ -15,13 +15,13 @@ const background = [
     where: "University of Melbourne",
     subWhere: "Bachelor of Science - Data Science",
     details:
-      'Unimelb presented many diverse opportunities. It allowed me to connect with great professors, caring tutors and wonderful peers. The three years I spent in Unimelb pushed me to open my knowledge and challenge my worldview.\n Every day was different in Unimelb. The university’s "Melbourne Model" enabled me to learn complex statistics, machine learning and Information Technologies in-depth while also discovering the world of psychology, finance and arts. Amazingly brilliant minds motivated me to continue improving and thaught me humility. The expression of "awed" gets thrown at me on a daily basis and I love it. It just shows how amazing the world can be.\nUnimelb gave me the joy of learning and endless inspirations.',
+      'Unimelb presented many diverse opportunities. It allowed me to connect with great professors, caring tutors and wonderful peers. The three years I spent in Unimelb pushed me to open my knowledge and challenge my worldview.\n Every day was different in Unimelb. The university’s "Melbourne Model" enabled me to learn complex statistics, machine learning and Information Technologies in-depth while also discovering the world of psychology, finance and arts. Amazingly brilliant minds motivated me to continue improving and taught me humility. The expression of "awed" gets thrown at me daily and I love it. It just shows how amazing the world can be.\nUnimelb gave me the joy of learning and endless inspirations.',
   },
   {
     where: "Gloria Christian Highschool",
     subWhere: "Science",
     details:
-      "Gloria was a place where I started to learn how vast the world is. I was dedicated to sports in my first year and spend the rest of my high school years participating in math and physics competitions. During my three year time in high school, I managed to earn various different awards and won many competitions in different fields including futsal and astronomy. Competitions that were challenging was realy fun. The best moments of my high school competition career was not during competitions that I won, but rather the closest losses in large national competitions. It really motivated me to push myself to try and win the next year.",
+      "Gloria was a place where I started to learn how vast the world is. I was dedicated to sports in my first year and spend the rest of my high school years participating in math and physics competitions. During my three year time in high school, I managed to earn various awards and won many competitions in different fields including futsal and astronomy. Competitions that were challenging was really fun. The best moments of my high school competition career was not during competitions that I won, but rather the closest losses in large national competitions. It motivated me to push myself to try and win the next year.",
   },
 ];
 
