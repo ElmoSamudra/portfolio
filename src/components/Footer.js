@@ -29,12 +29,12 @@ export default function Footer() {
   return (
     <Grid className={classes.root}>
       <Typography variant="h6">Shawn E Samudra</Typography>
-      <Typography variant="h6">
+      <Typography variant="body1">
         <EmailIcon />
         Shawnsamudra09@gmail.com
       </Typography>
       <Link href="https://www.linkedin.com/in/shawn-samudra-734524150/">
-        <Typography variant="h6">
+        <Typography variant="body1">
           <LinkedInIcon />
           Shawn Samudra
         </Typography>
