@@ -40,10 +40,10 @@ export default function NavBar() {
             Shawn Samudra
           </Typography>
           <Button color="inherit" href="/projects">
-            Projects
+            <Typography>Projects</Typography>
           </Button>
           <Button color="inherit" href="/hobbies">
-            Hobbies
+            <Typography>Hobbies</Typography>
           </Button>
         </Toolbar>
       </AppBar>
